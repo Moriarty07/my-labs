@@ -1,0 +1,217 @@
+#include <iostream>
+
+
+
+
+#include <cmath>
+
+
+using namespace std;
+
+
+int main()
+
+
+{
+
+
+   	double x, y, A, B;
+
+
+   	cout << "x="; cin >> x;
+// 2) форма скорочена
+
+
+   	A = 4.95 * x * x;
+
+
+   	if (x < -3.5)
+
+
+         	B = 4 + pow(x,-2);
+
+
+   	if (x >= -3.5 && x < 1)
+
+
+         	B = tan((3.5 + x) / 5);
+
+
+   	if (x >= 1)
+
+
+         	B = sin(3 * x) - cos(x);
+
+
+   	y = A + B;
+
+
+   	cout << endl;
+
+
+   	cout << "1) y=" << y << endl;
+
+
+   	// 2 форма повна;
+
+
+   	if (x < -3.5)
+
+
+         	B = 4 + pow(x,-2);
+
+
+   	else
+
+
+         	if (x >= 1)
+
+
+                	B = sin(3 * x) - cos(x);
+
+
+         	else
+
+
+                	B = tan((3.5 + x) / 5);
+
+
+   	y = A + B;
+
+
+   	cout << "2) y=" << y << endl;
+
+
+   	cin.get();
+
+
+   	return 0;
+
+}
+//4-1
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double p = 1;
+	int i;
+	int N;
+	cout << "N="; cin >> N;
+	i = N;
+	while (i<=16)
+	{
+		p = p * (i * N) / (i * i + N * N);
+		i++;
+	}
+	cout << p << endl;
+	 p = 1;
+	 i = N;
+	do {
+		p = p * (i * N) / (i * i + N * N);
+		i++;
+	} while (i <= 16);
+	cout << p << endl;
+	p = 1;
+	for(int i=N;i<=16;i++)
+		p = p * (i * N) / (i * i + N * N);
+	cout << p << endl;
+	p = 1;
+	for(int i=16;i>=N;i--)
+		p = p * (i * N) / (i * i + N * N);
+	cout << p << endl;
+	cin.get();
+	return 0;
+}
+//4-2
+#include <iostream>
+
+
+
+
+#include <cmath>
+
+
+using namespace std;
+
+
+int main()
+
+
+{
+
+
+	double x, y, A, B;
+
+
+	cout << "x="; cin >> x;
+
+
+	A = 4.95 * x * x;
+
+
+	if (x < -3.5)
+
+
+		B = 4 + pow(x,-2);
+
+
+	if (x >= -3.5 && x < 1)
+
+
+		B = tan((3.5 + x) / 5);
+
+
+	if (x >= 1)
+
+
+		B = sin(3 * x) - cos(x);
+
+
+	y = A + B;
+
+
+	cout << endl;
+
+
+	cout << "1) y=" << y << endl;
+
+
+	// 1 ñïîñ³á â ñêîðî÷åí³é;
+
+
+	if (x < -3.5)
+
+
+		B = 4 + pow(x,-2);
+
+
+	else
+
+
+		if (x >= 1)
+
+
+			B = sin(3 * x) - cos(x);
+
+
+		else
+
+
+			B = tan((3.5 + x) / 5);
+
+
+	y = A + B;
+
+
+	cout << "2) y=" << y << endl;
+
+
+	cin.get();
+
+
+	return 0;
+
+
+}
+
